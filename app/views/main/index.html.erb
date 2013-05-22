@@ -4,7 +4,7 @@
 function test(){
 
 FB.api('/me', function(response) {
-  alert('Your name is ' + response.name);
+  alert(response.name +'\n' + response.gender +'\n' + response.age_range);
 });
 
 }
